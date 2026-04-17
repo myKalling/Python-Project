@@ -7,7 +7,7 @@ print(secret_number) # For Testing purposes, you can comment this out in product
 guess: int = 0
 
 while guess != secret_number:
-    guess_input = input("Guess the number between 1 and 10: ").strip()
+    guess_input: str = input("Guess the number between 1 and 10: ").strip()
 
     if not guess_input.isdigit():
         print("Invalid input. Please enter a number between 1 and 10.")
