@@ -4,7 +4,7 @@ import random
 secret_number = 1
 print(secret_number) # For Testing purposes, you can comment this out in production
 
-guess = None
+guess: int = 0
 
 while guess != secret_number:
     guess_input = input("Guess the number between 1 and 10: ").strip()
