@@ -25,7 +25,7 @@ try:
         }
             
         with open('results.json', 'w') as json_file:
-            json.dump(result, json_file,)
+            json.dump(result, json_file, indent=4)
 
 except FileNotFoundError:
     print("The file 'sample-superstore.csv' was not found.")
